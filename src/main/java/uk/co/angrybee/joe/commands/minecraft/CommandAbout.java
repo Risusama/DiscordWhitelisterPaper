@@ -12,7 +12,7 @@ public class CommandAbout implements CommandExecutor {
     // about command
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        sender.sendMessage("[DW] DiscordWhiteLister by JoeShimell\n" + NamedTextColor.GREEN + "https://github.com/JoeShimell/DiscordWhitelisterSpigot");
+        sender.sendMessage("[DW] DiscordWhiteLister by JoeShimell, maintained by Risusama\n" + NamedTextColor.GREEN + "https://github.com/Risusama/DiscordWhitelisterPaper");
         return true;
     }
 }

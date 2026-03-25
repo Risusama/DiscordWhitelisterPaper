@@ -189,24 +189,24 @@ public class DiscordClient extends ListenerAdapter {
     private static void BuildStrings() {
         // build here instead of every time a message is received, as they do not change
         EmbedBuilder embedBuilderBotInfo = new EmbedBuilder();
-        embedBuilderBotInfo.setTitle("Discord Whitelister for Spigot");
-        embedBuilderBotInfo.addField("Version", new DiscordWhitelister().getPluginMeta().getVersion(), false);
-        embedBuilderBotInfo.addField("Links", ("https://www.spigotmc.org/resources/discord-whitelister.69929/\nhttps://github.com/JoeShimell/DiscordWhitelisterSpigot"), false);
+        embedBuilderBotInfo.setTitle("Discord Whitelister for Paper");
+        embedBuilderBotInfo.addField("Version", DiscordWhitelister.getPlugin(DiscordWhitelister.class).getPluginMeta().getVersion(), false);
+        embedBuilderBotInfo.addField("Links", ("https://github.com/Risusama/DiscordWhitelisterPaper"), false);
         embedBuilderBotInfo.addField("Commands", ("**Add:** /whitelist add minecraftUsername\n**Remove:** /whitelist remove minecraftUsername"), false);
-        embedBuilderBotInfo.addField("Experiencing issues?", "If you encounter an issue, please report it here: https://github.com/JoeShimell/DiscordWhitelisterSpigot/issues", false);
+        embedBuilderBotInfo.addField("Experiencing issues?", "If you encounter an issue, please report it here: https://github.com/Risusama/DiscordWhitelisterPaper/issues", false);
         embedBuilderBotInfo.setColor(infoColour);
         botInfo = embedBuilderBotInfo.build();
 
         addCommandInfo = CreateEmbeddedMessage("Whitelist Add Command",
-                "/whitelist add minecraftUsername\n\nIf you encounter any issues, please report them here: https://github.com/JoeShimell/DiscordWhitelisterSpigot/issues",
+                "/whitelist add minecraftUsername\n\nIf you encounter any issues, please report them here: https://github.com/Risusama/DiscordWhitelisterPaper/issues",
                 EmbedMessageType.INFO).build();
 
         removeCommandInfo = CreateEmbeddedMessage("Whitelist Remove Command",
-                "/whitelist remove minecraftUsername\n\nIf you encounter any issues, please report them here: https://github.com/JoeShimell/DiscordWhitelisterSpigot/issues",
+                "/whitelist remove minecraftUsername\n\nIf you encounter any issues, please report them here: https://github.com/Risusama/DiscordWhitelisterPaper/issues",
                 EmbedMessageType.INFO).build();
 
         whoIsInfo = CreateEmbeddedMessage("Whitelist WhoIs Command",
-                "/whitelist whois minecraftUsername\n\nIf you encounter any issues, please report them here: https://github.com/JoeShimell/DiscordWhitelisterSpigot/issues",
+                "/whitelist whois minecraftUsername\n\nIf you encounter any issues, please report them here: https://github.com/Risusama/DiscordWhitelisterPaper/issues",
                 EmbedMessageType.INFO).build();
     }
 

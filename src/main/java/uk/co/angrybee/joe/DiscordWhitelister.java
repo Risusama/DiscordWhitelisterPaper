@@ -68,7 +68,6 @@ public class DiscordWhitelister extends JavaPlugin {
     public static PermissionsConfig permissionsConfig;
     public static OnWhitelistCommandsConfig onWhitelistCommandsConfig;
 
-
     @Override
     public void onEnable() {
         thisPlugin = this;
