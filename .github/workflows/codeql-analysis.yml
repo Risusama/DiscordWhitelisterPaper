@@ -76,7 +76,7 @@ jobs:
       uses: github/codeql-action/analyze@v3
 
     - name: Upload the generated artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: discord-whitelister-jar
         path: /home/runner/work/DiscordWhitelisterPaper/DiscordWhitelisterPaper/target/discord-whitelister-*.jar
